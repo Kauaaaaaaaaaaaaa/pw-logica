@@ -1,6 +1,15 @@
-valor = 15.6789
+print("=== CONVERSOR DE ARMAZENAMENTO ===")
 
-print(f"{valor}")
-print(f"{valor:.1f}")
-print(f"{valor:.2f}")
-print(f"{valor:.3f}")
+bytes = float(input("Digite a quantidade de Bytes: "))
+kb = float(input("Digite a quantidade de KB:"))
+mb = float(input("Digite a quantidade de MB:"))
+
+resultado_kb = bytes / 1024
+resultado_mb = bytes / 1024
+resultado_gb = bytes / 1024
+
+print("\n=== RESULTADOS ===n")
+
+print(f"{bytes} Bytes = {resultado_kb:.2f} KB")
+print(f"{bytes} KB = {resultado_mb:.2f} MB")
+print(f"{bytes} MB = {resultado_gb:.2f} GB")
