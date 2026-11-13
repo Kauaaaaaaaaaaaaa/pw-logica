@@ -1,12 +1,9 @@
-num1 = float(input("Digite um valor: "))
-num2 = float(input("Digite um valor: "))
+nome = "Kauã"
+idade = 16
+altura = 1.70
+aprovado = True
 
-soma = num1 + num2
-subt = num1 - num2
-mult = num1 * num2
-div = num1 / num2
-
-print("O resultado da soma é: ",soma)
-print("O resultado da subtraçao é:", subt)
-print("O resultado da multiplicação é:", mult)
-print("O resultado da divisão é: ",div)
+print(type(nome))
+print(type(idade))
+print(type(altura))
+print(type(aprovado))
