@@ -1,13 +1,26 @@
-nota = float(input("Sua nota: ").replace(",", "."))
+num1 = float(input("Digite o primeiro valor: "))
+num2 = float(input("Digite o segundo valor: "))
+operacao = input("Digite a operação desejada (+, -, * ou /): ")
 
-if nota >= 9:
-    print("Conceito A - Excelente!")
+if operacao == "+":
+    resultado = num1 + num2
+    print(f"O resultado da soma é: {resultado}")
 
-elif nota >= 7:
-    print("Conceito B - Bom!")
+elif operacao == "-":
+    resultado = num1 - num2
+    print(f"O resultado da subtração é: {resultado}")
 
-elif nota >= 5:
-    print("Conceito C - Regular")
+elif operacao == "*":
+    resultado = num1 * num2
+    print(f"O resultado da multiplicação é: {resultado}")
 
-elif nota != 5:
-    print("Conceito D - Reprovado")   
+elif operacao == "/":
+    # Regra de proteção na divisão
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"O resultado da divisão é: {resultado:.2f}")
+    else:
+        print("Erro! Não pode dividir por zero!")
+
+else:
+    print("Operação inválida!")
