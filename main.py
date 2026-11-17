@@ -1,16 +1,13 @@
-nome = input("Digite seu nome: ")
-peso = float(input("Digite seu peso em kg (ex: 70.5): "))
-altura = float(input("Digite sua altura em metros (ex: 1.75): "))
+nota = float(input("Sua nota: ").replace(",", "."))
 
-imc = peso / (altura ** 2)
+if nota >= 9:
+    print("Conceito A - Excelente!")
 
-if imc < 18.5:
-    classificacao = "Abaixo do peso"
-elif imc < 25:
-    classificacao = "Peso normal"
-elif imc < 30:
-    classificacao = "Sobrepeso"
-else:
-    classificacao = "Obesidade"
+elif nota >= 7:
+    print("Conceito B - Bom!")
 
-print(f"{nome}, seu IMC é {imc:.1f} - Classificação: {classificacao}")
+elif nota >= 5:
+    print("Conceito C - Regular")
+
+elif nota != 5:
+    print("Conceito D - Reprovado")   
