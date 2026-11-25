@@ -11,3 +11,8 @@ while palpite != numero_secreto:
         print("O número secreto é maior!")
     else:
         print("O número secreto é menor!")
+    palpite = int(input("Tente novamente:"))
+tentativas += 1
+print("Parabéns! Você acertou!")
+print(f"O número secreto era:{numero_secreto}")
+print(f"Você utilizou {tentativas} tentativas.")
