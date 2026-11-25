@@ -1,6 +1,13 @@
-numero = int(input("Digite um número:"))
+import random
 
-for contador in range (1, 11):
+numero_secreto = random.randint(1, 20)
+tentativas = 0
+palpite = int(input(
+    "Tente advinhar um numero entre 1 e 20:"))
 
-    resultado = numero * contador
-    print(f"{numero} x {contador} = {resultado}")
+while palpite != numero_secreto:
+    tentativas += 1
+    if palpite < numero_secreto:
+        print("O número secreto é maior!")
+    else:
+        print("O número secreto é menor!")
