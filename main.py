@@ -1,5 +1,12 @@
-nomes = ["Kauã", "Erick", "Lucas", "Miguel", "Bernardo"]
+alunos = {
+    "João": 8,
+    "Maria": 9,
+    "Pedro": 5,
+    "Ana": 6,
+}
 
-for indice, nome in enumerate(nomes, start=1):
-    print(f"{indice}º - {nome}")
-
+for nome, nota in alunos.items():
+    if nota >= 7:
+        print(f"{nome} Está Aprovado")
+    else:
+        print(f"{nome}Está Reprovado")
