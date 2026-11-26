@@ -1,6 +1,18 @@
-filmes = ["Forest Gump", "Gente Grande 1", "Gente Grande 2", "Borat", "As Aventuras de Tintin"]
+produtos = ["Carne Moída", "Pão", "Macarrão"]
 
-print("Lista completa:", filmes)
-print("Primeiro filme:", filmes[0])
-print("Último filme:", filmes[-1])
-print("Quantidade de filmes:", len(filmes))
+print(produtos)
+
+produtos.append("Shampoo")
+produtos.append("Sabonete")
+
+print(produtos)
+
+quantidade_produtos = len(produtos)
+
+print("Lista de produtos:", produtos)
+
+print("A quantidade total de produtos é:", quantidade_produtos)
+
+print("Lista de produtos:")
+for produto in produtos:
+    print(produto)
