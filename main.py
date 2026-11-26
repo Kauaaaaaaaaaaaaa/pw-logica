@@ -1,13 +1,23 @@
-numero = int(input("Digite um número inteiro positivo: "))
-pares = 0
-impares = 0
+opcao = 0
+while opcao != 4:
+    print("\n=====Menu de Operações =====")
+    print("1 - Mostrar mensagem de Boas-vindas!")
+    print("2 - Mostrar a tabuada de um número ")
+    print("3 - Informar se um número é par ou ímpar")
+    print("4 - Sair")
+    opcao = int(input("Escolher uma opção: "))
 
-for contador in range(1, numero + 1)
-
-    if contador % 2 == 0:
-        pares += 1
-    else:
-        impares += 1
-
-print(f"Quantidade de numeros pares {pares}")
-print(f"Quantidade de numeros impares {impares}")
+    if opcao == 1:
+        print("\nBoas-vindas!")
+    elif opcao == 2:
+        numero = int(input("Digite um número para ver a tabuada: "))
+        for contador in range(1, 11):
+            print(f"{numero} x {contador} = {numero * contador}")
+    elif opcao == 3:
+        numero = int(input("Digite um número: "))
+        if numero % 2 == 0:
+            print(f"O número {numero} é PAR!")
+        else:
+            print(f"O número {numero} é ÍMPAR") 
+    elif opcao == 4:
+        print("\n Encerrando o programa...")
