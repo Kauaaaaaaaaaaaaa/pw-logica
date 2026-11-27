@@ -1,23 +1,13 @@
-numeros = []
+produtos = ["Mouse", "Teclado", "Monitor", "Headset", "WebCam"]
 
-print("Por favor, informe 10 números inteiros:")
+print("Lista atual:", produtos)
 
-for contador in range(10):
-    num = int(input(f"Digite o {contador+1} número:"))
-    numeros.append(num)
+produto_remover = input("Digite o nome do produto que deseja remover: ")
+if produto_remover in produtos:
+    produtos.remove(produto_remover)
+    print(f"O produto '{produto_remover}' foi removido com sucesso!")
+else:
+    print(f"O produto '{produto_remover}' não foi encontrado na lista.")
 
-    pares = []
-    impares = []
-
-    for num in numeros:
-        if num % 2 == 0:
-            pares.append(num)
-    else:
-            impares.append(num)
-
-print("\n--- Resultados ---")
-print(f"Lista completa de números: {numeros}")
-print(f"Números pares: {pares}")
-print(f"Quantidade de números pares: {len(pares)}")
-print(f"Números ímpares: {impares}")
-print(f"Quantidade de números ímpares: {len(impares)}")
+    print("\n--- Lista Atualizada ---")
+    print(produtos)
