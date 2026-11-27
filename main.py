@@ -1,19 +1,23 @@
-notas = []
+numeros = []
 
-print("Por favor, informe 5 notas:")
+print("Por favor, informe 10 números inteiros:")
 
-for i in range(5):
-    nota = float(input(f"Digite a {i+1}ª nota: "))
-    notas.append(nota)
+for contador in range(10):
+    num = int(input(f"Digite o {contador+1} número:"))
+    numeros.append(num)
 
-    soma = sum(notas)
-    media = soma / len(notas)
-    maior_nota = max(notas)
-    menor_nota = min(notas)
+    pares = []
+    impares = []
 
-    print("\n--- Resultados ---")
-    print(f"Notas cadastradas: {notas}")
-    print(f"Soma das notas: {soma}")
-    print(f"Média das notas: {media:.2f}")
-    print(f"Maior nota: {maior_nota}")
-    print(f"Menor nota: {menor_nota}")
+    for num in numeros:
+        if num % 2 == 0:
+            pares.append(num)
+    else:
+            impares.append(num)
+
+print("\n--- Resultados ---")
+print(f"Lista completa de números: {numeros}")
+print(f"Números pares: {pares}")
+print(f"Quantidade de números pares: {len(pares)}")
+print(f"Números ímpares: {impares}")
+print(f"Quantidade de números ímpares: {len(impares)}")
